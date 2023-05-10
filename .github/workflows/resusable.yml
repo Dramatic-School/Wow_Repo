@@ -1,0 +1,9 @@
+name: Reusable workflow
+
+on:
+  workflow_call:
+
+jobs:
+  call-another-reusable:
+    uses: Dramatic-School/prefect/.github/workflows/use_this_workflow.yml@main
+    secrets: inherit
