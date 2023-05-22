@@ -5,6 +5,6 @@ list = [1,2,3,4]
 j = 9
 for i in list:
   print(i)
-  print(j)
+  print(k)
 
 
