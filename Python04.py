@@ -2,5 +2,5 @@
 
 Python_new():
   {
-    print("Python is amazing!")
+    print("Python is amazing!!")
   }
