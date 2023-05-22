@@ -3,7 +3,7 @@ empt_list = []
 
 for i in string_val:
   if i not in empt_list:
-    empt_list.add(i)
+    empt_list.add(i,j)
   else:
     pass
   
