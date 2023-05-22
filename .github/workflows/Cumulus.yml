@@ -1,0 +1,16 @@
+name: Cumulus
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    environment: UAT
+    steps:
+      - run: 'echo "No build required"'
