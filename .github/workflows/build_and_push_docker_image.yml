@@ -1,0 +1,30 @@
+name: build_and_push_docker_image
+
+on:
+  push:
+    branches:
+      - main
+  workflow_call:
+    inputs:
+      application_name:
+        description: 'The name of the deployed application'
+        required: true
+        type: string
+
+jobs:
+  build:
+    name: push Docker image
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Configure AWS credentials
+        run: echo "Configuring..."
+
+      - name: Login to Blinkist Amazon ECR
+        run: echo "Logged in"
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build, tag, and push docker image to Blinkist Amazon ECR
+        run: echo "Build, tag, and push docker image to Blinkist Amazon ECR"
